@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <div id="logo">
+            <h3>CA</h3>
+        </div>
+        <a href="#">Inicio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#prod">Produtos</a>
+        <a href="#feedback">Avaliações</a>
+        <a href="#faq">FAQS</a>
+        <a href="#location">localização</a>
+    </nav>
+
+    <section class="back-img">
+        <h1 id="title">Sua Cafeteria</h1>
+        <div id="p">
+            <p>Nascida no coração da cidade, crescemos junto com ela, acolhendo e entendo que cada um sua história e necessidade.</p>
+            <p>sempre estivemos de braços abertos para acolher cada um, com uma recepção acalorada, semelhante com o coração de uma mãe</p>
+        </div>
+    </section>
+
+    <section class="back-neutro" id="sobre">
+        <h2>Sobre Nós</h2>
+        <div class="carrossel-container">
+            <div class="carrossel">
+                <div class="slide">
+                    <img src="img/int1.jpeg" alt="Imagem 1">
+                </div>
+                <div class="slide">
+                    <img src="img/int2.jpeg" alt="Imagem 2">
+                </div>
+                <div class="slide">
+                    <img src="img/pet.jpeg" alt="Imagem 3">
+                </div>
+            </div>
+            <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moverSlide(1)">&#10095;</button>
+        </div>
+        <div class="text">
+            <p class="hidden">Nossa cafeteria nasceu com a ideia de transformar momentos simples em experiências especiais. Acreditamos que um bom café vai muito além da bebida: ele carrega histórias, encontros e pausas necessárias no meio da rotina. Por isso, selecionamos cuidadosamente nossos grãos e preparamos cada xícara com atenção aos detalhes, garantindo sabor, aroma e qualidade em cada pedido.</p>
+            <img src="img/int1.jpeg" width="50%" class="hidden">
+        </div>
+        <div class="text">
+            <img src="img/int2.jpeg" width="50%" class="hidden">
+            <p class="hidden">Além do café, oferecemos um ambiente acolhedor, perfeito para conversar com amigos, trabalhar ou simplesmente relaxar. Nosso cardápio conta com diversas opções de bebidas, doces e acompanhamentos preparados para tornar sua visita ainda mais agradável. Aqui, cada cliente é recebido com carinho, porque mais do que servir café, queremos fazer parte dos seus melhores momentos. ☕✨</p>
+        </div>
+</section>
+
+<section class="back-neutro" id="prod">
+    <h2>Nossos Produtos mais vendidos</h2>
+    <div class="cards hidden">
+        <div class="card">
+            <h3>Pão de queixo</h3>
+            <img src="img/pao.png" width="100%">
+            <h4>R$ 4,50</h4>
+        </div>
+        <div class="card">
+            <h3>Café da casa</h3>
+            <img src="img/coffe.png" width="100%">
+            <h4>R$ 3,99</h4>
+        </div>
+        <div class="card">
+            <h3>Misto quente</h3>
+            <img src="img/misto.png" width="100%">
+            <h4>R$ 3,50</h4>
+        </div>
+    </div>
+</section>
+
+<section class="back-neutro" id="feedback">
+    <h2>Veja o que pensam sobre a gente:</h2>
+    <div class="cards hidden">
+        <div class="card">
+            <img src="img/icons/aspas.png" width="50%">
+            <h3>Cauã de Assis</h3>
+            <p>Ambiente maravilhoso, super aconchegante, adorei tudo! Que local bonito!</p>
+        </div>
+        <div class="card">
+            <img src="img/icons/aspas.png" width="50%">
+            <h3>João Vitor</h3>
+            <p>Produtos incriveis, atendentes maravilhosos, ambiente arejado.</p>
+        </div>
+        <div class="card">
+            <img src="img/icons/aspas.png" width="50%">
+            <h3>Caleb Jorge</h3>
+            <p>local petfriendly me ganhou! muito legal o atendimento e o carinho!</p>
+        </div>
+    </div>
+</section>
+
+<section class="back-neutro" id="pf">
+    <div id="pet">
+        <h2>Ambiente PET FRIENDLY</h2>
+        <img src="img/icons/dog.png" width="5%" class="hidden">
+    </div>
+    <p class="hidden">Adoramos animas! entendemos que eles são gente como a gente... todos são bem-vindos!</p>
+    <p><a href="#" id="sb">saiba mais</a></p>
+    <img src="img/pet.jpeg" width="50%">
+</section>
+
+<section class="back-neutro" id="faq">
+    <h2>Perguntas frequentes:</h2>
+    <div class="acordeao hidden">
+        <div class="painel">Aceitam quais formas de pagamento?</div>
+        <div class="conteudo">pix, cartão e dinheiro!</div>
+
+        <div class="painel">funciona em quais dias?</div>
+        <div class="conteudo">de segunda a sabado!</div>
+
+        <div class="painel">Vocês realizam entregas?</div>
+        <div class="conteudo">Sim! para toda a cidade!</div>
+    </div>
+
+    <h2>Duvidas? entre em contato</h2>
+
+    <form action="https://formsubmit.co/pageasy.muriae@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="digite o seu nome" required>
+        <input type="email" name="email" placeholder="digite o seu email" required>
+        <button type="submit" class="submit">Enviar</button>
+   </form>
+
+</section>
+
+<section class="back-neutro" id="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14886.192096827173!2d-42.381129744580086!3d-21.1305782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbcc7f3cfcda327%3A0x9277971fc5499bb1!2sForja%20Caf%C3%A9s%20Especiais!5e0!3m2!1spt-BR!2sbr!4v1773534656428!5m2!1spt-BR!2sbr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="hidden"></iframe>
+</section>
+
+<section class="back-neutro">
+    <h2>Converse com o nosso suporte, tire suas dúvidas</h2>
+    <a href="suporte.html" id="sb" class="hidden">Clique aqui</a>
+</section>
+
+<footer class="back-neutro" id="rodape">
+    <p>2026 pageasy - todos os direitos reservados</p>
+</footer>
+</body>
+<script src="script.js"></script>
+</html>
